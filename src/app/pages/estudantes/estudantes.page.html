@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Estudantes
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item button *ngFor="let estudante of estudantes" [routerLink]="[estudante.id]">
+        <ion-label><h1>{{estudante.nome}}</h1></ion-label>
+      </ion-item>
+    </ion-list>
+</ion-content>
+
